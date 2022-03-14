@@ -2,3 +2,5 @@ venv/
 db.sqlite3
 migrations/
 media/
+photo/__pycache__
+config/__pycache__
