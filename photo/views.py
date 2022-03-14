@@ -25,3 +25,8 @@ class PhotoUploadView(CreateView):
             return redirect('/')    # success URL
         else:
             return self.render_to_response({'form':form})   # 잘못 입력 시 form에 입력된 정보를 그대로 돌려줌
+
+class PhotoDeleteView(DeleteView):
+    model = Photo
+    success_url = '/'
+    template_name = 'photo/delete.html'
